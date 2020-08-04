@@ -13,8 +13,6 @@ app.get('/', function (req, res) {
 });
 
 app.get('/*', function (req, res) {
-    // res.type('text/html');
-    console.log(req.url);
     res.sendFile(path.join(__dirname, req.url))
 });
 
