@@ -3,8 +3,6 @@ var express = require('express');
 
 var app = express();
 
-app.set('port', 2000);
-
 app.get('/', function (req, res) {
     res.type('text/html');
     res.sendFile("./HomePage.html",{root: path.join(__dirname, '.')})
@@ -28,6 +26,4 @@ app.use(function (err, req, res, next) {
     res.send('500 - Server Error');
 });
 
-app.listen(app.get('port'), function () {
-    console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
-});
+app.listen(process.env.PORT || 5000)
