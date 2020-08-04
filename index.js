@@ -3,6 +3,10 @@ var express = require('express');
 
 var app = express();
 
+app.use(express.static(path.join(__dirname)))
+
+app.use("/Images", express.static(__dirname + '/Images'))
+
 app.get('/', function (req, res) {
     res.type('text/html');
     res.sendFile(path.join(__dirname, 'HomePage.html'))
