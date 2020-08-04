@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steen's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="HomePage.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="MyProjects.html" class="nav__link">My Projects</a></li>
+                <li class="nav__item"><a href="AboutMe.html" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="ContactMe.html" class="nav__link">Contact Me</a></li>
+                <li class="nav__item"><a href="jenninst-A6.pdf" target="_blank" class="nav__link">My Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, my name is <strong>Steen Jennings</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro"><span>Aspiring Software Engineer, Former Management
+                Consultant</span></p>
+        </div>
+
+    </section>
+    <section class="My Languages" id="my languages">
+        <div class="Languages_Frameworks_Skills">
+            <table style="width:100%">
+                <tr>
+                    <th>LANGUAGES</th>
+                    <th>FRAMEWORKS</th>
+                    <th>SKILLS</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/python.png" width="10%" class="lang"> Python
+                    </td>
+                    <td><img src="images/nodejs.png" width="10%" class="lang"> Node.js
+                    </td>
+                    <td><img src="images/html5.png" width="10%" class="lang"> HTML5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/javascript.png" width="10%" class="lang"> Javascript
+                    </td>
+                    <td><img src="images/bootstrap.png" width="10%" class="lang"> Bootstrap
+                    </td>
+                    <td><img src="images/css3.png" width="10%" class="lang"> CSS3
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/ASM.png" width="10%" class="lang"> x86 Assembly
+                    </td>
+                    <td><img src="images/express.png" width="10%" class="lang"> Express.js
+                    </td>
+                    <td><img src="images/vba.png" width="10%" class="lang"> Visual Basic
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/ruby.png" width="10%" class="lang"> Ruby
+                    </td>
+                    <td></td>
+                    <td><img src="images/msexcel.png" width="10%" class="lang"> MS Excel Expert
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <div class="carousel_animation">
+
+                <div class="carousel_pic">
+                    <a href="My Projects.html">
+
+                        <img src="images/Gess.jpg" style="width:100%;height:500px">
+                        <div class="text">Gess Game</div>
+
+                    </a>
+                </div>
+
+                <div class="carousel_pic">
+                    <a href="My Projects.html">
+
+                        <img src="images/market.jpg" style="width:100%;height:500px">
+                        <div class="text">Paper Trading Copycat</div>
+
+                    </a>
+                </div>
+
+                <div class="carousel_pic">
+                    <a href="My Projects.html">
+
+                        <img src="images/algorithm.jpg" style="width:100%;height:500px">
+                        <div class="text">Algorithm Visualizer</div>
+
+                    </a>
+                </div>
+
+                <a class="prev" onclick="nextPic(-1)">&#10094;</a>
+                <a class="next" onclick="nextPic(1)">&#10095;</a>
+            </div>
+            <br>
+
+        </div>
+    </section>
+    <footer>
+        <div class="social_links">
+            <ul class="contact-links">
+                <li class="contact-link__item"><a class="social-list__link" href="https://linkedin.com/">LinkedIn</a>
+                </li>
+                <li class="contact-link__item"><a class="social-list__link" href="https://github.com">GitHub</a></li>
+                <li class="contact-link__item"><a class="social-list__link" href="https://instagram.com/">Instagram</a>
+                </li>
+            </ul>
+        </div>
+        <div class="email_OSU">
+            <a href="mailto:jenninst@oregonstate.edu" class="footer-link">jenninst@oregonstate.edu</a>
+        </div>
+    </footer>
+    <script src="projectCarousel.js"></script>
+</body>
+
+</html>

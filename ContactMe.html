@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steen's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="HomePage.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="MyProjects.html" class="nav__link">My Projects</a></li>
+                <li class="nav__item"><a href="AboutMe.html" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="ContactMe.html" class="nav__link">Contact Me</a></li>
+                <li class="nav__item"><a href="jenninst-A6.pdf" target="_blank" class="nav__link">My Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about_me" id="about me">
+        <h2 class="section_title section__title--email_form">Get in Touch</h2>
+        <div class="email_form">
+            <fieldset>
+                <legend>Contact</legend>
+                <form enctype="text/plain" method="post" action="mailto:steenjennings@gmail.com?subject=Portfolio Contact Request">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" placeholder="Your last name..">
+
+                    <label for="reason_for_contact">Contact Reason</label>
+                    <input type="text" id="user_reason" placeholder="Your reason for reaching out..">
+
+                    <label for="subject">Email Content</label>
+                    <textarea id="" name=" " placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+
+                </form>
+            </fieldset>
+        </div>
+    </section>
+    <footer>
+        <div class="social_links">
+            <ul class="contact-links">
+                <li class="contact-link__item"><a class="social-list__link" href="https://linkedin.com/SteinarJennings">LinkedIn</a></li>
+                <li class="contact-link__item"><a class="social-list__link" href="https://github.com/SteenJennings">GitHub</a></li>
+                <li class="contact-link__item"><a class="social-list__link" href="https://instagram.com/steenjennings">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="email_OSU">
+            <a href="mailto:jenninst@oregonstate.edu" class="footer-link">jenninst@oregonstate.edu</a>
+        </div>
+    </footer>
+    <script src="portfolio_script.js"></script>
+    <script src="web_script.js"></script>
+</body>
+
+</html>
