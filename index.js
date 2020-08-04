@@ -10,6 +10,7 @@ app.get('/', function (req, res) {
 
 app.get('/*', function (req, res) {
     // res.type('text/html');
+    console.log(req.url);
     res.sendFile('.'+req.url,{root: path.join(__dirname, '.')})
 });
 
