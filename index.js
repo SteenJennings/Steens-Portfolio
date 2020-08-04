@@ -5,13 +5,13 @@ var app = express();
 
 app.get('/', function (req, res) {
     res.type('text/html');
-    res.sendFile("./HomePage.html",{root: path.join(__dirname, '.')})
+    res.sendFile(path.join(__dirname, 'HomePage.html'))
 });
 
 app.get('/*', function (req, res) {
     // res.type('text/html');
     console.log(req.url);
-    res.sendFile('.'+req.url,{root: path.join(__dirname, '.')})
+    res.sendFile(path.join(__dirname, req.url))
 });
 
 app.use(function (req, res) {
